@@ -1,0 +1,62 @@
+.sidebar_mar {
+    .about_content {
+        h2 {
+            margin: 30px 0 20px;
+        }
+
+        .google_card {
+            border: 2px solid $page_bg;
+            padding: 20px;
+            border-radius: 10px;
+            @include display(space-between, flex-start);
+            gap: 25px;
+            margin-bottom: 20px;
+
+            .google_style {
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .switch_img {
+                display: flex;
+                gap: 15px;
+
+                .switch {
+                    margin-left: 10px;
+                    width: 50px;
+                    height: 25px;
+                    background-color: #ccc;
+                    border-radius: 25px;
+                    position: relative;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+
+                .switch.on {
+                    background-color: $black;
+                }
+
+                .toggle {
+                    width: 23px;
+                    height: 23px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    transition: left 0.3s;
+                }
+
+                .switch.on .toggle {
+                    left: 26px;
+                }
+            }
+        }
+    }
+}

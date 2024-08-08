@@ -1,0 +1,45 @@
+.sidebar_mar {
+    h2 {
+        margin-top: 40px;
+    }
+
+    .profile_btn_styles {
+        @include display(space-between, center);
+        gap: 10px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+
+        button {
+            color: $white;
+            background-color: $black;
+            padding: 10px 22px;
+            border-radius: 8px;
+            border: 1px solid $black;
+        }
+    }
+
+    .profile_content {
+        @include display(flex-start, center);
+        gap: 50px;
+        margin-top: 25px;
+
+        .profile_ditz {
+
+            .name_email_Number {
+                @include display(flex-start, center);
+                gap: 50px;
+                margin-bottom: 15px;
+
+                p {
+                    width: 150px;
+                    color: $forgot;
+                    font-size: 15px;
+                }
+
+                h4 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

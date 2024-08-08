@@ -1,0 +1,114 @@
+.sidebar_mar {
+    .document_content {
+        h2 {
+            margin: 30px 0 20px;
+        }
+
+        .two_input_flex {
+            @include display(space-between, center);
+            gap: 10px;
+            margin-bottom: 15px;
+
+            .label_input_flex {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                label {
+                    margin-bottom: 6px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                }
+
+                select {
+                    padding: 10px;
+                    border: 2px solid $page_bg;
+                    border-radius: 5px;
+                    outline: none;
+                    box-shadow: none;
+                    background-color: $white;
+                }
+
+                input {
+                    padding: 10px;
+                    border: 2px solid $page_bg;
+                    border-radius: 5px;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .table_style {
+            margin-top: 30px;
+
+            .data-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: $white;
+
+                thead {
+                    tr {
+                        .text_center {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                tbody {
+
+                    tr {
+                        td {
+                            font-size: 14px;
+                        }
+
+                        .text_center {
+                            text-align: center;
+
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+
+                        .color_gray {
+                            color: $forgot;
+                        }
+                    }
+                }
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 15px;
+                text-align: left;
+                font-family: Arial, sans-serif;
+            }
+
+            .data-table th {
+                border-bottom: 2px solid $page_bg;
+            }
+
+            .data-table tbody tr:nth-child(odd) {
+                background-color: $white;
+            }
+
+            .data-table tbody tr:nth-child(even) {
+                background-color: $page_bg;
+            }
+
+            button {
+                padding: 6px 10px;
+                background-color: $white;
+                color: $black;
+                border: 1px solid $black;
+                border-radius: 4px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: Arial, sans-serif;
+            }
+        }
+    }
+}
